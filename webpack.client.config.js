@@ -24,7 +24,7 @@ module.exports = {
   },
   devtool: 'nosources-source-map',
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: isDebug ? 'index.css' : 'index.[contenthash:8].css'
     }),
